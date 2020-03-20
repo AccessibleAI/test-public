@@ -1,5 +1,7 @@
-require 'fileutils'    
-FileUtils.cp_r '.', '../output'
-FileUtils.cp_r '../output', 'output'
-FileUtils.rm_r '../output'
-FileUtils.rm_r 'output/.git'
+require 'fileutils'
+FileUtils.touch "file_unsynced"
+FileUtils.mkdir "output"
+Dir.chdir ("output")
+FileUtils.touch "output_file_synced"
+FileUtils.touch "hello.text"
+
