@@ -1,5 +1,7 @@
 import os
-arr =["file_unsynced","custom_file_synced","hello.text"] 
+arr =["custom_file_synced","hello.text"] 
+f = open("output/{}.txt".format("file_unsynced"))
+f.close()
 if not os.path.exists("custom"):
   os.mkdir("custom")
 for i in arr:
