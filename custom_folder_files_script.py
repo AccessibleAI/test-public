@@ -1,6 +1,6 @@
 import os
 arr =["custom_file_synced","hello.text"] 
-f = open("output/{}".format("file_unsynced"))
+f = open("output/{}".format("file_unsynced"), "a")
 f.close()
 if not os.path.exists("custom"):
   os.mkdir("custom")
