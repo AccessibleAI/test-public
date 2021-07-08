@@ -1,7 +1,10 @@
 import os
-os.system('touch file_unsynced')
+arr =["custom_file_synced","hello.text"] 
+f = open("output/{}".format("file_unsynced"))
+f.close()
 if not os.path.exists("custom"):
   os.mkdir("custom")
-os.system('cd custom')
-os.system('touch custom_file_synced')
-os.system('touch hello.text')
+for i in arr:
+  f = open("custom/{}".format(i), "a")
+  f.write("Now the file has more content! {}".format(i))
+  f.close()
