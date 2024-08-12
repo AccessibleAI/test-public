@@ -1,4 +1,4 @@
 import time
 def predict(d):
-    time.sleep(20)
+    time.sleep(60)
     return "1"
